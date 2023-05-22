@@ -7,5 +7,3 @@ def to_grayscale(path):
     # convert to gray scale
     grayscale_image = image.convert("L")
 
-    #save
-    grayscale_image.save(f'grayscale_{path}')

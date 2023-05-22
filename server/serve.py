@@ -1,8 +1,10 @@
 from flask import Flask, request, Response
+from flask_cors import CORS
 from PIL import Image
 import io
 
 app = Flask(__name__)
+CORS(app)
 
 # route that receives an image and returns a grayscale version of it
 @app.route('/', methods=['POST'])
